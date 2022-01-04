@@ -1,0 +1,32 @@
+GET http://localhost:6600/personas
+
+###
+
+GET http://localhost:6600/personas/1
+
+###
+POST http://localhost:6600/personas
+content-type: application/json
+
+{
+    "Nombres": "jose",
+    "Apellido_patreno": "juarez",
+    "Apellido_materno":"sanchez",
+    "Direccion":"holsbjgds",
+    "Telefono":"1234576867"
+}
+
+###
+PUT  http://localhost:6600/personas/3
+content-type: application/json
+
+{
+    "Nombres": "jose",
+    "Apellido_patreno": "juarez",
+    "Apellido_materno":"sanchez",
+    "Direccion":"calle sin nombre",
+    "Telefono":"1234576867"
+}
+
+###
+DELETE   http://localhost:6600/personas/4
